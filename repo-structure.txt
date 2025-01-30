@@ -1,0 +1,27 @@
+brain-lipids-cvae/
+│
+├── data/
+│   └── lba_all_pixels_fully_abamapped11282023_exp_lipidclasses_allenannot_train.parquet
+│
+├── models/
+│   ├── losses.py
+│   ├── encoder.py
+│   ├── decoder.py
+│   ├── cvae.py
+│   ├── README_cvae.md 
+│   └── cVAE_arch.png
+│
+├── utils/
+│   ├── dataloader.py
+│   ├── dataprocessing.py
+│   └── visualisation.py
+│
+├── notebooks/
+│   ├── 1_data_preprocessing.ipynb
+│   ├── 2_model_training.ipynb
+│   └── 3_inference_results.ipynb
+│
+├── requirements.txt
+├── repo-structure.txt
+├── README.md
+└── LICENSE.md
