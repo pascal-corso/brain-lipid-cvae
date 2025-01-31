@@ -1,7 +1,7 @@
-brain-lipids-cvae/
+brain-lipid-cvae/
 │
 ├── data/
-│   └── lba_all_pixels_fully_abamapped11282023_exp_lipidclasses_allenannot_train.parquet
+│   └── lba_all_pixels_fully_abamapped11282023_exp_lipidclasses_allenannot_train.parquet (original MALDI data to be included)
 │
 ├── models/
 │   ├── losses.py
