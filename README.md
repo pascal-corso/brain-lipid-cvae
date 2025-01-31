@@ -10,7 +10,7 @@ This repository contains a PyTorch implementation of a conditional VAE specifica
 
 - Conditional VAE architecture optimised for spatial data
 - Enhanced encoder and decoder with attention mechanisms
-- Progressive KL divergence annealing
+- Progressive Kullback-Leibler (KL) divergence annealing
 - Comprehensive data preprocessing pipeline
 - Visualisation tools for results analysis
 - Support for both CPU and GPU training
@@ -21,7 +21,7 @@ This repository contains a PyTorch implementation of a conditional VAE specifica
 1. Clone the repository:
 ```bash
 git clone https://github.com/pascal-corso/brain-lipid-cvae.git
-cd brain-lipids-cvae
+cd brain-lipid-cvae
 ```
 
 2. Create a virtual environment with venv or conda
@@ -87,7 +87,7 @@ The Jupyter notebook `3_inference_results.ipynb` in `notebooks/` provides an exa
 
 - `models/`: Neural network architecture
 - `utils/`: Helper functions and data processing utilities
-- `notebooks/`: Jupyter notebooks for examples and visualization
+- `notebooks/`: Jupyter notebooks for examples and visualisation
 - `data/`: Directory for dataset storage
 
 ## Results Visualisation
