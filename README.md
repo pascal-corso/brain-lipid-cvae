@@ -20,7 +20,7 @@ This repository contains a PyTorch implementation of a conditional VAE specifica
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/pascal-corso/brain-lipids-cvae.git
+git clone https://github.com/pascal-corso/brain-lipid-cvae.git
 cd brain-lipids-cvae
 ```
 
@@ -113,7 +113,7 @@ This project is licensed under an Academic Code Usage License - see the LICENSE 
 
 ## Acknowledgments
 
-- Thanks to the Laboratory of Brain Development and Biological Data Science as well as Lipid Cell Biology Lab of the Ecole Polytechnique Fédérale de Lausanne (EPFL) for providing the MALDI-MSI data
+- Thanks to the Laboratory of Brain Development and Biological Data Science as well as Lipid Cell Biology Lab of the Ecole Polytechnique Fédérale de Lausanne (EPFL) for providing the MALDI-MSI data.
 - Special thanks to Dr Ekaterina Krymova (Swiss Data Science Center) and Dr Daniel Trejo Banos (Swiss Data Science Center) for their input.
 
 ## Contact
