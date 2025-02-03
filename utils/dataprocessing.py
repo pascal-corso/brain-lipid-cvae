@@ -160,18 +160,31 @@ class CoordinateTransformer:
         center_z: float = 0
     ) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
         """Convert Cartesian to spherical coordinates."""
-        x_rel = x - center_x
-        y_rel = y - center_y
-        z_rel = z - center_z
+        x_rel = np.zeros(len(x))
+        y_rel = np.zeros(len(y))
+        z_rel = np.zeros(len(z))
+        theta = np.zeros(len(z))
+        phi = np.zeros(len(z))
         
+        for i in range(len(x)):
+            if x[i] != 0 and y[i] != 0 and z[i] != 0:
+                x_rel[i] = x[i] - center_x
+                y_rel[i] = y[i] - center_y
+                z_rel[i] = z[i] - center_z
+        else:
+                x_rel[i] = y_rel[i] = z_rel[i] = 0
+    
         r = np.sqrt(x_rel**2 + y_rel**2 + z_rel**2)
-        theta = np.arctan2(y_rel, x_rel)
-        phi = np.arccos(np.clip(z_rel/r, -1.0, 1.0))
+        
+        for i in range(len(x)):
+            if r[i] != 0:
+                theta[i] = np.arctan2(y_rel[i], x_rel[i])
+                phi[i] = np.arccos(np.clip(z_rel[i]/r[i], -1.0, 1.0))
         
         # Handle zeros
-        non_zero = r > 0
-        theta[~non_zero] = 0
-        phi[~non_zero] = 0
+        #non_zero = r > 0
+        #theta[~non_zero] = 0
+        #phi[~non_zero] = 0
         
         return r, theta, phi
     
